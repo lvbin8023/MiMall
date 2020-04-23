@@ -1,18 +1,26 @@
 <template>
   <div class="home">
+    <div class="header">小米商城</div>
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Vue.js</h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
+
+<style scoped>
+  .header {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 15px 0;
+    line-height: 1;
+    background-color: #42b983;
+  }
+</style>
