@@ -1,30 +1,25 @@
 <template>
   <div class="home">
-    <div class="header">小米商城</div>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1>Vue.js</h1>
+    home
+    <nav-header/>
+    <router-view/>
+    <nav-footer/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import NavHeader from '../components/NavHeader'
+import NavFooter from '../components/NavFooter'
 
 export default {
-  name: 'Home',
-  components: {}
+  name: 'home',
+  components: {
+    NavHeader,
+    NavFooter
+  }
 }
 </script>
 
 <style scoped>
-  .home {
-    text-align: center;
-  }
-
-  .header {
-    font-size: 20px;
-    color: #ffffff;
-    padding: 15px 0;
-    line-height: 1;
-    background-color: #42b983;
-  }
 </style>
