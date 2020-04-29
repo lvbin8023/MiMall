@@ -40,6 +40,7 @@ export default {
   clearStorage (key, moduleName) {
     const data = this.getStorage()
     if (moduleName) {
+      if (!data[moduleName]) return
       delete data[moduleName][key]
     } else {
       delete data[key]
