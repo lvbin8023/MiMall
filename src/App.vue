@@ -5,7 +5,5 @@
 </template>
 
 <style lang="scss">
-#app {
-  color: #2c3e50;
-}
+  @import "./assets/scss/reset";
 </style>
